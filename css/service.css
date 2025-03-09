@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background: #6a5acd;
+    color: white;
+    padding: 20px 0;
+}
+
+.service, .achievements, .future-plans {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+.slide-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.zoom-in {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 1s ease, transform 1s ease;
+}
+.gallery {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.gallery h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.gallery-container img {
+    width: 48%; /* Each image takes almost half the width */
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
