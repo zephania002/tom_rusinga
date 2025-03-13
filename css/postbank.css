@@ -1,0 +1,65 @@
+
+.bank-account-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    background-color: #f4f4f4; /* Light background */
+  }
+  
+  .bank-account-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    width: 700px; /* Adjust width as needed */
+    animation: fadeIn 0.8s ease-out; /* Initial fade-in animation */
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .bank-logo img {
+    width: 150px; /* Adjust logo size */
+    margin-right: 20px;
+  }
+  
+  .account-details h2 {
+    margin-bottom: 10px;
+    font-size: 2.7em;
+    color: #333;
+  }
+  
+  .account-number {
+    display: flex;
+    align-items: center;
+  }
+  
+  .account-number span {
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-right: 10px;
+    color: #555;
+  }
+  
+  #copyButton {
+    background-color: #007bff; /* Blue button */
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #copyButton:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  
+  
