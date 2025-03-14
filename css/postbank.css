@@ -60,6 +60,58 @@
     background-color: #0056b3;
   }
   
-  
+  .bank-account-section {
+    position: relative; /* For absolute positioning of the FAB */
+}
+
+.donate-fab {
+    background-color: #ff6b6b; /* Example red/heart color */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none; /* If you use an <a> tag */
+}
+
+.donate-fab span {
+    display: none; /* Initially hide text */
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.donate-fab:hover {
+    background-color: #e05252;
+    transform: scale(1.05);
+}
+
+/* Show text on wider screens or on hover */
+@media (min-width: 768px) {
+    .donate-fab {
+        width: auto;
+        padding: 15px 20px;
+        border-radius: 30px;
+    }
+    .donate-fab i {
+        margin-right: 8px;
+        .donate-fab i {
+          font-size: 40px; /* This controls the icon size */
+          /* ... other potential styles ... */
+      }
+    }
+    .donate-fab span {
+        display: inline;
+    }
+}
   
   
